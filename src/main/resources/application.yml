@@ -1,0 +1,13 @@
+server:
+  port: 3000
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://bktechstore-db:5432/bktechstore_db
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+#logging:
+#  level:
+#    root: on
+#    sql: debug
+#    web: info
