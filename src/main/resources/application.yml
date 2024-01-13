@@ -1,13 +1,15 @@
 server:
   port: 3000
+logging:
+  level:
+    org.springframework.r2dbc: debug
+    web: info
+    org.slf4j: info
 spring:
   r2dbc:
-    url: r2dbc:postgresql://bktechstore-db:5432/bktechstore_db
     username: postgres
     password: root
-    driver-class-name: org.postgresql.Driver
-#logging:
-#  level:
-#    root: on
-#    sql: debug
-#    web: info
+    url: r2dbc:postgresql://localhost:5432/bktechstore_db
+  sql:
+    init:
+      mode: never
