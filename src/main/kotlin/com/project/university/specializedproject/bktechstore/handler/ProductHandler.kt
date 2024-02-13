@@ -1,4 +1,4 @@
-package com.project.university.specializedproject.bktechstore
+package com.project.university.specializedproject.bktechstore.handler
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper

@@ -1,5 +1,6 @@
 package com.project.university.specializedproject.bktechstore
 
+import com.project.university.specializedproject.bktechstore.handler.ProductHandler
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.reactive.function.server.coRouter
