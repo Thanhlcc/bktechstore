@@ -12,6 +12,7 @@ import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.r2dbc.core.DatabaseClient
 import org.springframework.r2dbc.core.await
+import org.springframework.web.reactive.function.server.coRouter
 
 @SpringBootApplication
 class BktechstoreApplication
@@ -19,4 +20,3 @@ class BktechstoreApplication
 fun main(args: Array<String>) {
     runApplication<BktechstoreApplication>(*args)
 }
-

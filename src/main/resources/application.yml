@@ -1,15 +1,7 @@
-server:
-  port: 3000
-logging:
-  level:
-    org.springframework.r2dbc: debug
-    web: info
-    org.slf4j: info
 spring:
-  r2dbc:
-    username: postgres
-    password: root
-    url: r2dbc:postgresql://localhost:5432/bktechstore_db
-  sql:
-    init:
-      mode: never
+  application:
+    name: "mainservice"
+  profiles:
+    active: dev
+  config:
+    import: configserver:http://localhost:8071/
